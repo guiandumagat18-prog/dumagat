@@ -1,0 +1,49 @@
+body {
+    background-color: #aef0b1;
+    text-align: center;   
+    line-height: 1.0;
+} 
+ h1{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    padding: 1rem;
+ }
+ header{
+    border: 2px solid #099432a4;
+    background-color: #dd64af;
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+ }
+  nav ul{
+    font-size: 30px;
+    display: flex;
+    gap: 115px;
+    text-align: center;
+  }
+  nav a{
+    text-decoration: none;
+    padding: 10px;
+
+  }
+  main{
+    background-color: #25d860;
+    weight: 400;
+    padding: 10px;
+    margin: 50px;
+    section{
+        border: 2px solid #3e4feba4;
+        padding: 5px;
+        margin-top: 5px;
+        text-align: center;
+    }
+  } button{
+    background-color: #aa2525;
+
+  }
+    h2 {
+        color: #570f0f;
+        font-family: Times New Roman, sans-serif, Arial, Helvetica;
+    }
+      
