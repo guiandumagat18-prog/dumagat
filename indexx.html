@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+     
+        const students = [
+    {
+        name: "Juan",
+        age: 18,
+        course: "BSIT",
+        grade: 92
+    },
+    {
+        name: "Maria",
+        age: 19,
+        course: "BSCS",
+        grade: 85
+    },
+    {
+        name: "Pedro",
+        age: 18,
+        course: "BSIT",
+        grade: 74
+    },
+    {
+        name: "Ana",
+        age: 20,
+        course: "BSIS",
+        grade: 65
+    }
+];
+
+// Task #1
+console.log("Name:" + students[0].name);
+console.log("Age:" + students[0].age);
+console.log("Course:" + students[0].course);
+console.log("Grade:" + students[0].grade);
+
+// Task #2
+function getStatus(grade) { 
+    if (grade >= 90 && grade <= 100){
+        return "Excellent";
+    }
+    else if (grade >= 75 && grade <= 89){
+        return "Passed";
+    } else 
+         return "Failed";
+        
+}
+  console.log(getStatus(95));
+  console.log(getStatus(80));
+  console.log(getStatus(70));
+
+  
+// Task #3
+   for (let i = 0; i < students.length; i++){
+     const s = students[i];
+     const status = getStatus(students[i].grade);
+
+     console.log(s.name + " - " + s.course + " - " + s.grade + " - " + status);
+   }
+
+   function getAchive(grade){ 
+        if (grade <= 90 && grade >= 100){
+            return "Achievement: Outstanding Performance!";
+        }else 
+            return "\n ";
+    }
+
+// Task #4
+    const getMessage = (name, status) => {
+        return name + " is an " + status + " student."
+    } 
+       console.log(getMessage("Juan", "Excellent"));
+
+// Task #5
+       for (let i = 0; i < students.length; i++){
+     const s = students[i];
+     const status = getStatus(students[i].grade);
+     const message = getMessage(s.name, status);
+     
+
+     console.log("---------------------------------")
+     console.log("Name: " + s.name);
+     console.log("Course: " + s.course);
+     console.log("Grade: " + s.grade);
+     console.log("Status: " + status);
+     console.log(message);
+     console.log(getAchive(students[i].grade));
+     console.log("---------------------------------")
+  }
+
+
+        </script>
+</body>
+</html>
