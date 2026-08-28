@@ -40,3 +40,12 @@ form {
 #services {
   padding: 20px;
 }
+
+.contact {
+  text-align: center;
+}
+
+#contact {
+ text-align: left;
+  padding: 30px;
+}
