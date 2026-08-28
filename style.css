@@ -78,3 +78,11 @@ form {
     color: rgb(9, 238, 20);
   }
 }
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 48px;
+    color: rgb(0, 17, 255);
+  }
+}
+
