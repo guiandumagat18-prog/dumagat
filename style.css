@@ -7,13 +7,16 @@ ul {
 nav {
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   margin-left: 50px;
   margin-right: 50px;
 }
 nav ul{
   display: flex;
   gap: 20px;
+  padding: 0;
+  margin: 0;
+
 }
 
 main {
@@ -22,11 +25,12 @@ main {
   gap: 30px;
   padding: 50px;
   margin: 50px;
+  max-width: 1200px;
 }
 
 main section {
   flex: 1;
-  min-width: 400px;
+  min-width: 280px;
   border: 2px solid black;
   padding: 20px;
 }
@@ -36,11 +40,7 @@ form {
   flex-direction: column;
   gap: 20px;
 }
-
-#services {
-  padding: 20px;
-}
-
+ 
 .contact {
   text-align: center;
 }
@@ -48,4 +48,33 @@ form {
 #contact {
  text-align: left;
   padding: 30px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main {
+    padding: 15px;
+    margin: 10px;
+    gap: 20px;
+  }
+
+  main section {
+    flex: 1 1 100%;
+    min-width: 0;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 100px;
+    color: rgb(9, 238, 20);
+  }
 }
