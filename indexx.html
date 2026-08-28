@@ -65,12 +65,6 @@ function getStatus(grade) {
      console.log(s.name + " - " + s.course + " - " + s.grade + " - " + status);
    }
 
-   function getAchive(grade){ 
-        if (grade <= 90 && grade >= 100){
-            return "Achievement: Outstanding Performance!";
-        }else 
-            return "\n ";
-    }
 
 // Task #4
     const getMessage = (name, status) => {
@@ -91,7 +85,12 @@ function getStatus(grade) {
      console.log("Grade: " + s.grade);
      console.log("Status: " + status);
      console.log(message);
-     console.log(getAchive(students[i].grade));
+
+     if (students[i].grade >= 90 && students[i].grade <= 100){
+        console.log("Achivement: " + "You are a scholar");
+     }
+        else
+             "";
      console.log("---------------------------------")
   }
 

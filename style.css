@@ -1,83 +1,42 @@
 body {
-    background-image: url(https://i.pinimg.com/1200x/71/16/3f/71163fddff0fa3e1409549ae0fba0dc5.jpg);
-    text-align: center;   
-    line-height: 1.0;
-    outline: 2px solid #6d0377a4;
-    text-decoration: thick;
-} 
- h1{
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 1rem;
-    padding: 1rem;
- }
- header{
-    text-align: center;
-    padding: 15px;
-    margin-top: 10px;
- } p{
-    color: #3462e0;
-    font-size: 10px;
-    font-weight: 100;
-    letter-spacing: 10px;
-    padding: 10px;
+   text-align: center;
 }
-  nav ul{
-    font-size: 30px;
-    display: flex;
-    gap: 115px;
-    text-align: center;
-  }
-  nav a{
-    text-decoration: none;
-    padding: 10px;
-    text-align: center;
-  }
-  main{
-    background-color: transparent;
-    weight: 400;
-    padding: 10px;
-    margin: 50px;
-    section{
-        border: 2px solid #3e4feba4;
-        padding: 5px;
-        margin-top: 5px;
-        text-align: center;
-        outline: 2px solid #add1a6a4;
-    }
-  } button{
-    background-color: #ce0f0f;
+ul {
+   list-style-type: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+nav ul{
+  display: flex;
+  gap: 20px;
+}
 
-  }
-    h2 {
-        color: #570f0f;
-        font-family: Times New Roman, sans-serif, Arial, Helvetica;
-    }
-    .services{
-        color: #09e61bce;
-        font-size: 15px;
-        font-family: Times New Roman;
-    }
-      .about{
-        color: #4655d6;
-        font-size: 20px;
-        font-family: Times New Roman;
-    }
-        #contact {
-            color: #b62baa;
-            font-size: 30px;
-        }
-        .contact{
-            color: #941e8a;
-            font-size: 30px;
-        } 
-      #about {
-        color: #b62baa;
-        font-size: 30px;
-        }
-        #services {
-            color: #b62baa;
-            font-size: 30px;
-        }
-        
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px;
+  margin: 50px;
+}
 
+main section {
+  flex: 1;
+  min-width: 400px;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#services {
+  padding: 20px;
+}
