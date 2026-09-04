@@ -23,7 +23,8 @@ function greet(greetings,names = []) {
 console.log(greet("Mayung aga ", ["Guian" , "Mark" , "Arjay" , "Myco."]));
 
 const heading = document.querySelector("h1");
-console.log(heading);
+heading.textContent = "Your Father's Name";
+console.log(heading.textContent);
 
 const contactHeading = document.querySelector("#contact h2");
 console.log(contactHeading);
