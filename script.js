@@ -21,3 +21,12 @@ function greet(greetings,names = []) {
     }
 }
 console.log(greet("Mayung aga ", ["Guian" , "Mark" , "Arjay" , "Myco."]));
+
+const heading = document.querySelector("h1");
+console.log(heading);
+
+const contactHeading = document.querySelector("#contact h2");
+console.log(contactHeading);
+
+const projectHeading = document.querySelector("#services h2");
+console.log(projectHeading);
